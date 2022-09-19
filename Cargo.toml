@@ -1,4 +1,6 @@
 [workspace]
 members = [
-    "data_struct"
+    "data",
+    # "item",
+    "local_test"
 ]

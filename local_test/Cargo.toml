@@ -1,5 +1,5 @@
 [package]
-name = "data_struct"
+name = "local_test"
 version = "0.1.0"
 edition = "2021"
 

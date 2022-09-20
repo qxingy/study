@@ -1,7 +1,7 @@
 static OPEN : &str = "(<{";
 static CLOSE : &str = ")>}";
 
-use data::stack::stack::Stack;
+use super::Stack;
 
 
 pub fn par(vec: String) -> bool {

@@ -1,8 +1,9 @@
-use data::stack::{stack::Stack, self};
+use super::Stack;
 
-pub fn scale(mut num : u64,base : u64)->String{
-
-    let digits = ['0', '1', '2', '3', '4', '5', '6', '7', '6' , '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+pub fn scale(mut num: u64, base: u64) -> String {
+    let digits = [
+        '0', '1', '2', '3', '4', '5', '6', '7', '6', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F',
+    ];
 
     let mut stack = Stack::new();
 
@@ -16,6 +17,6 @@ pub fn scale(mut num : u64,base : u64)->String{
     while !stack.is_empty() {
         num.push(digits[stack.pop().unwrap() as usize])
     }
-    
+
     num
 }
